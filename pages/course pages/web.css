@@ -1,0 +1,62 @@
+.container-fluid img {
+	width: 100%;
+	height: 600px;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.container h1 {
+	text-align: center;
+	margin-top: 3rem !important;
+	margin-bottom: 2rem !important;
+	font-size: 55px;
+	font-family: righteous;
+	font-weight: bold;
+	text-transform: uppercase;
+	position: relative;
+}
+.container h1::before {
+	content: "";
+	height: 2px;
+	background-color: #febd01;
+	position: absolute;
+	width: 210px;
+	bottom: 0;
+	transition: all 0.5s ease;
+}
+.container p {
+	text-align: justify;
+	font-size: 20px;
+	font-family: roboto condensed;
+}
+.container a {
+	float: right;
+	margin-bottom: 20px;
+}
+/* media */
+@media (max-width: 600px) {
+	.container-fluid img {
+	
+		height: 400px;
+	
+}
+@media (max-width: 400px) {
+	.container-fluid img {
+	
+		height: 300px;
+	
+	}
+}
+@media (max-width: 400px){
+    .container h1::before {
+        content: "";
+        height: 2px;
+        background-color: #febd01;
+        position: absolute;
+        width: 160px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transition: all 0.5s ease;
+    }
+}
